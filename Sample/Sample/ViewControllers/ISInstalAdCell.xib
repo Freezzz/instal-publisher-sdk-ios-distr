@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ISInstalAdCell" rowHeight="60" id="fas-EE-BHC" customClass="ISInstalAdCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fas-EE-BHC" id="7xW-Qp-zKd">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30n-0f-cip">
+                        <rect key="frame" x="8" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="3XL-pl-2Wn"/>
+                            <constraint firstAttribute="width" constant="50" id="VWd-5s-p9e"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="DropBox" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ICc-Aa-4Z7">
+                        <rect key="frame" x="66" y="9" width="474" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="tGr-4m-UMV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Best file sharing app" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbF-ae-caD">
+                        <rect key="frame" x="66" y="29" width="474" height="21"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                        <color key="textColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="highlightedColor" red="0.34509803919999998" green="0.34509803919999998" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jc5-D5-eHX">
+                        <rect key="frame" x="548" y="8" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="FDN-Dv-L3w"/>
+                            <constraint firstAttribute="width" constant="44" id="HBw-aD-6Cy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <state key="normal" image="instal">
+                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ICc-Aa-4Z7" firstAttribute="top" secondItem="7xW-Qp-zKd" secondAttribute="top" constant="9" id="739-m0-0xM"/>
+                    <constraint firstAttribute="centerY" secondItem="30n-0f-cip" secondAttribute="centerY" id="7EK-sX-amj"/>
+                    <constraint firstAttribute="bottom" secondItem="QbF-ae-caD" secondAttribute="bottom" constant="9" id="8P4-Tr-Yvu"/>
+                    <constraint firstItem="QbF-ae-caD" firstAttribute="leading" secondItem="30n-0f-cip" secondAttribute="trailing" constant="8" id="Mpi-d7-JmP"/>
+                    <constraint firstItem="ICc-Aa-4Z7" firstAttribute="leading" secondItem="30n-0f-cip" secondAttribute="trailing" constant="8" id="WlU-bq-dgm"/>
+                    <constraint firstItem="jc5-D5-eHX" firstAttribute="leading" secondItem="QbF-ae-caD" secondAttribute="trailing" constant="8" id="XXg-SU-W9m"/>
+                    <constraint firstItem="jc5-D5-eHX" firstAttribute="leading" secondItem="ICc-Aa-4Z7" secondAttribute="trailing" constant="8" id="Ygi-A0-Mza"/>
+                    <constraint firstAttribute="centerY" secondItem="jc5-D5-eHX" secondAttribute="centerY" id="aJ5-k8-C18"/>
+                    <constraint firstItem="30n-0f-cip" firstAttribute="leading" secondItem="7xW-Qp-zKd" secondAttribute="leading" constant="8" id="cuC-YG-FLc"/>
+                    <constraint firstItem="QbF-ae-caD" firstAttribute="top" secondItem="ICc-Aa-4Z7" secondAttribute="bottom" constant="3" id="gpp-MQ-f61"/>
+                    <constraint firstAttribute="trailing" secondItem="jc5-D5-eHX" secondAttribute="trailing" constant="8" id="ncD-1g-HYT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adIcon" destination="30n-0f-cip" id="vwj-PL-aKZ"/>
+                <outlet property="adSubtitle" destination="QbF-ae-caD" id="hdT-QH-Hts"/>
+                <outlet property="adTitle" destination="ICc-Aa-4Z7" id="Ubq-gl-t1T"/>
+            </connections>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="instal" width="50" height="50"/>
+    </resources>
+</document>
