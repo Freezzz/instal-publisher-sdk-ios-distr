@@ -2,7 +2,7 @@
 //  INAlertAd.h
 //  InstalPublisherSDK
 //
-//  Created by Insal.com on 17/12/14.
+//  Created by Ivan Litsvinenka on 17/12/14.
 //  Copyright (c) 2014 com.instal All rights reserved.
 //
 
