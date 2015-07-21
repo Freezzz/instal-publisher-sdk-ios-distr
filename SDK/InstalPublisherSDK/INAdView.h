@@ -2,7 +2,7 @@
 //  INAdView.h
 //  InstalPublisherSDK
 //
-//  Created by Insal.com on 11/11/14.
+//  Created by Ivan Litsvinenka on 11/11/14.
 //  Copyright (c) 2014 com.instal All rights reserved.
 //
 
