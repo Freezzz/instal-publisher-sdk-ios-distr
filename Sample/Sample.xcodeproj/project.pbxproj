@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1735F1541C0F3327006DD74B /* InstalPublisherSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1735F1521C0F3327006DD74B /* InstalPublisherSDKResources.bundle */; };
+		1735F1551C0F3327006DD74B /* libInstalPublisherSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1735F1531C0F3327006DD74B /* libInstalPublisherSDK.a */; };
 		177EB2351A8A4C1F0086E677 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB2341A8A4C1F0086E677 /* QuartzCore.framework */; };
 		177EB2371A8A4C230086E677 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB2361A8A4C230086E677 /* CoreGraphics.framework */; };
 		177EB2391A8A4C280086E677 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB2381A8A4C280086E677 /* AdSupport.framework */; };
@@ -20,8 +22,6 @@
 		17D38E2F1A8A496100B00CC4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17D38E2E1A8A496100B00CC4 /* Images.xcassets */; };
 		17D38E321A8A496100B00CC4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D38E301A8A496100B00CC4 /* LaunchScreen.xib */; };
 		17D38E3E1A8A496100B00CC4 /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E3D1A8A496100B00CC4 /* SampleTests.m */; };
-		17D38E591A8A497C00B00CC4 /* InstalPublisherSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 17D38E571A8A497C00B00CC4 /* InstalPublisherSDKResources.bundle */; };
-		17D38E5A1A8A497C00B00CC4 /* libInstalPublisherSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D38E581A8A497C00B00CC4 /* libInstalPublisherSDK.a */; };
 		17D38E6A1A8A49C300B00CC4 /* INExpandableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E5D1A8A49C300B00CC4 /* INExpandableViewController.m */; };
 		17D38E6B1A8A49C300B00CC4 /* INBannerAdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E5F1A8A49C300B00CC4 /* INBannerAdViewController.m */; };
 		17D38E6C1A8A49C300B00CC4 /* INInterstitialSampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E611A8A49C300B00CC4 /* INInterstitialSampleViewController.m */; };
@@ -43,6 +43,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1735F1441C0F3327006DD74B /* INAdView+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INAdView+Internal.h"; sourceTree = "<group>"; };
+		1735F1451C0F3327006DD74B /* INAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAdView.h; sourceTree = "<group>"; };
+		1735F1461C0F3327006DD74B /* INAlertAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAlertAd.h; sourceTree = "<group>"; };
+		1735F1471C0F3327006DD74B /* INClientAdPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INClientAdPositioning.h; sourceTree = "<group>"; };
+		1735F1481C0F3327006DD74B /* INInterstitialAdControlle+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INInterstitialAdControlle+Internal.h"; sourceTree = "<group>"; };
+		1735F1491C0F3327006DD74B /* INInterstitialAdController+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INInterstitialAdController+Internal.h"; sourceTree = "<group>"; };
+		1735F14A1C0F3327006DD74B /* INInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INInterstitialAdController.h; sourceTree = "<group>"; };
+		1735F14B1C0F3327006DD74B /* INNativeAd+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INNativeAd+Internal.h"; sourceTree = "<group>"; };
+		1735F14C1C0F3327006DD74B /* INNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAd.h; sourceTree = "<group>"; };
+		1735F14D1C0F3327006DD74B /* INNativeAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdDelegate.h; sourceTree = "<group>"; };
+		1735F14E1C0F3327006DD74B /* INNativeAdRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdRendering.h; sourceTree = "<group>"; };
+		1735F14F1C0F3327006DD74B /* INNativeAdRequest+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INNativeAdRequest+Internal.h"; sourceTree = "<group>"; };
+		1735F1501C0F3327006DD74B /* INNativeAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdRequest.h; sourceTree = "<group>"; };
+		1735F1511C0F3327006DD74B /* INTableViewAdPlacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTableViewAdPlacer.h; sourceTree = "<group>"; };
+		1735F1521C0F3327006DD74B /* InstalPublisherSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InstalPublisherSDKResources.bundle; sourceTree = "<group>"; };
+		1735F1531C0F3327006DD74B /* libInstalPublisherSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInstalPublisherSDK.a; sourceTree = "<group>"; };
 		177EB2341A8A4C1F0086E677 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		177EB2361A8A4C230086E677 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		177EB2381A8A4C280086E677 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -61,21 +77,6 @@
 		17D38E371A8A496100B00CC4 /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D38E3C1A8A496100B00CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17D38E3D1A8A496100B00CC4 /* SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SampleTests.m; sourceTree = "<group>"; };
-		17D38E4A1A8A497C00B00CC4 /* INAdView+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INAdView+Internal.h"; sourceTree = "<group>"; };
-		17D38E4B1A8A497C00B00CC4 /* INAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAdView.h; sourceTree = "<group>"; };
-		17D38E4C1A8A497C00B00CC4 /* INAlertAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAlertAd.h; sourceTree = "<group>"; };
-		17D38E4D1A8A497C00B00CC4 /* INClientAdPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INClientAdPositioning.h; sourceTree = "<group>"; };
-		17D38E4E1A8A497C00B00CC4 /* INInterstitialAdController+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INInterstitialAdController+Internal.h"; sourceTree = "<group>"; };
-		17D38E4F1A8A497C00B00CC4 /* INInterstitialAdController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INInterstitialAdController.h; sourceTree = "<group>"; };
-		17D38E501A8A497C00B00CC4 /* INNativeAd+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INNativeAd+Internal.h"; sourceTree = "<group>"; };
-		17D38E511A8A497C00B00CC4 /* INNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAd.h; sourceTree = "<group>"; };
-		17D38E521A8A497C00B00CC4 /* INNativeAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdDelegate.h; sourceTree = "<group>"; };
-		17D38E531A8A497C00B00CC4 /* INNativeAdRendering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdRendering.h; sourceTree = "<group>"; };
-		17D38E541A8A497C00B00CC4 /* INNativeAdRequest+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "INNativeAdRequest+Internal.h"; sourceTree = "<group>"; };
-		17D38E551A8A497C00B00CC4 /* INNativeAdRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeAdRequest.h; sourceTree = "<group>"; };
-		17D38E561A8A497C00B00CC4 /* INTableViewAdPlacer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTableViewAdPlacer.h; sourceTree = "<group>"; };
-		17D38E571A8A497C00B00CC4 /* InstalPublisherSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = InstalPublisherSDKResources.bundle; sourceTree = "<group>"; };
-		17D38E581A8A497C00B00CC4 /* libInstalPublisherSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libInstalPublisherSDK.a; sourceTree = "<group>"; };
 		17D38E5C1A8A49C300B00CC4 /* INExpandableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INExpandableViewController.h; sourceTree = "<group>"; };
 		17D38E5D1A8A49C300B00CC4 /* INExpandableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INExpandableViewController.m; sourceTree = "<group>"; };
 		17D38E5E1A8A49C300B00CC4 /* INBannerAdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INBannerAdViewController.h; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1735F1551C0F3327006DD74B /* libInstalPublisherSDK.a in Frameworks */,
 				177EB2411A8A4C410086E677 /* MediaPlayer.framework in Frameworks */,
 				177EB23F1A8A4C3D0086E677 /* StoreKit.framework in Frameworks */,
 				177EB23C1A8A4C2D0086E677 /* EventKit.framework in Frameworks */,
@@ -105,7 +107,6 @@
 				177EB2391A8A4C280086E677 /* AdSupport.framework in Frameworks */,
 				177EB2371A8A4C230086E677 /* CoreGraphics.framework in Frameworks */,
 				177EB2351A8A4C1F0086E677 /* QuartzCore.framework in Frameworks */,
-				17D38E5A1A8A497C00B00CC4 /* libInstalPublisherSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +120,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1735F1431C0F3327006DD74B /* InstalPublisherSDK */ = {
+			isa = PBXGroup;
+			children = (
+				1735F1441C0F3327006DD74B /* INAdView+Internal.h */,
+				1735F1451C0F3327006DD74B /* INAdView.h */,
+				1735F1461C0F3327006DD74B /* INAlertAd.h */,
+				1735F1471C0F3327006DD74B /* INClientAdPositioning.h */,
+				1735F1481C0F3327006DD74B /* INInterstitialAdControlle+Internal.h */,
+				1735F1491C0F3327006DD74B /* INInterstitialAdController+Internal.h */,
+				1735F14A1C0F3327006DD74B /* INInterstitialAdController.h */,
+				1735F14B1C0F3327006DD74B /* INNativeAd+Internal.h */,
+				1735F14C1C0F3327006DD74B /* INNativeAd.h */,
+				1735F14D1C0F3327006DD74B /* INNativeAdDelegate.h */,
+				1735F14E1C0F3327006DD74B /* INNativeAdRendering.h */,
+				1735F14F1C0F3327006DD74B /* INNativeAdRequest+Internal.h */,
+				1735F1501C0F3327006DD74B /* INNativeAdRequest.h */,
+				1735F1511C0F3327006DD74B /* INTableViewAdPlacer.h */,
+			);
+			path = InstalPublisherSDK;
+			sourceTree = "<group>";
+		};
 		177EB2421A8A4C4A0086E677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,32 +218,12 @@
 		17D38E481A8A497C00B00CC4 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
-				17D38E491A8A497C00B00CC4 /* InstalPublisherSDK */,
-				17D38E571A8A497C00B00CC4 /* InstalPublisherSDKResources.bundle */,
-				17D38E581A8A497C00B00CC4 /* libInstalPublisherSDK.a */,
+				1735F1431C0F3327006DD74B /* InstalPublisherSDK */,
+				1735F1521C0F3327006DD74B /* InstalPublisherSDKResources.bundle */,
+				1735F1531C0F3327006DD74B /* libInstalPublisherSDK.a */,
 			);
 			name = SDK;
 			path = ../../SDK;
-			sourceTree = "<group>";
-		};
-		17D38E491A8A497C00B00CC4 /* InstalPublisherSDK */ = {
-			isa = PBXGroup;
-			children = (
-				17D38E4A1A8A497C00B00CC4 /* INAdView+Internal.h */,
-				17D38E4B1A8A497C00B00CC4 /* INAdView.h */,
-				17D38E4C1A8A497C00B00CC4 /* INAlertAd.h */,
-				17D38E4D1A8A497C00B00CC4 /* INClientAdPositioning.h */,
-				17D38E4E1A8A497C00B00CC4 /* INInterstitialAdController+Internal.h */,
-				17D38E4F1A8A497C00B00CC4 /* INInterstitialAdController.h */,
-				17D38E501A8A497C00B00CC4 /* INNativeAd+Internal.h */,
-				17D38E511A8A497C00B00CC4 /* INNativeAd.h */,
-				17D38E521A8A497C00B00CC4 /* INNativeAdDelegate.h */,
-				17D38E531A8A497C00B00CC4 /* INNativeAdRendering.h */,
-				17D38E541A8A497C00B00CC4 /* INNativeAdRequest+Internal.h */,
-				17D38E551A8A497C00B00CC4 /* INNativeAdRequest.h */,
-				17D38E561A8A497C00B00CC4 /* INTableViewAdPlacer.h */,
-			);
-			path = InstalPublisherSDK;
 			sourceTree = "<group>";
 		};
 		17D38E5B1A8A49C300B00CC4 /* ViewControllers */ = {
@@ -328,10 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E69AD11A8A61DD0075B0D0 /* ISInstalAdCell.xib in Resources */,
-				17D38E591A8A497C00B00CC4 /* InstalPublisherSDKResources.bundle in Resources */,
 				17D38E2D1A8A496100B00CC4 /* Main.storyboard in Resources */,
 				17D38E321A8A496100B00CC4 /* LaunchScreen.xib in Resources */,
 				17D38E2F1A8A496100B00CC4 /* Images.xcassets in Resources */,
+				1735F1541C0F3327006DD74B /* InstalPublisherSDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +486,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Zubr/Documents/Dev/TheEpicBean/InstalPublisherSDK/SDK/InstalPublisherSDK-Distr/SDK",
+					"/Users/Zubr/Documents/Dev/TheEpicBean/Instal.com/PublisherSDK/SDK/InstalPublisherSDK-Distr/SDK/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,7 +502,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Zubr/Documents/Dev/TheEpicBean/InstalPublisherSDK/SDK/InstalPublisherSDK-Distr/SDK",
+					"/Users/Zubr/Documents/Dev/TheEpicBean/Instal.com/PublisherSDK/SDK/InstalPublisherSDK-Distr/SDK/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
