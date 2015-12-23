@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "InstalPublisherSDK"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Pulisher SDK for Instal.com"
 
   s.description  = <<-DESC
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/instal_now"
 
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://bitbucket.org/tbdsrl/instal-publisher-sdk-ios-distr.git", :tag => "0.0.2" }
+  s.source       = { :git => "https://bitbucket.org/tbdsrl/instal-publisher-sdk-ios-distr.git", :tag => "0.0.3" }
 
   s.source_files  = 'SDK', 'SDK/**/*.{h,m}'
   s.vendored_library = 'SDK/libInstalPublisherSDK.a'
