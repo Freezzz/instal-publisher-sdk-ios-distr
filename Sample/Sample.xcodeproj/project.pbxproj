@@ -16,6 +16,7 @@
 		177EB23D1A8A4C2D0086E677 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB23B1A8A4C2D0086E677 /* EventKitUI.framework */; };
 		177EB23F1A8A4C3D0086E677 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB23E1A8A4C3C0086E677 /* StoreKit.framework */; };
 		177EB2411A8A4C410086E677 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 177EB2401A8A4C410086E677 /* MediaPlayer.framework */; };
+		1791F5A91C2AE19E00940FBC /* INNativeDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1791F5A81C2AE19E00940FBC /* INNativeDiscoveryViewController.m */; };
 		17D38E211A8A496100B00CC4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E201A8A496100B00CC4 /* main.m */; };
 		17D38E241A8A496100B00CC4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17D38E231A8A496100B00CC4 /* AppDelegate.m */; };
 		17D38E2D1A8A496100B00CC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17D38E2B1A8A496100B00CC4 /* Main.storyboard */; };
@@ -67,6 +68,9 @@
 		177EB23B1A8A4C2D0086E677 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		177EB23E1A8A4C3C0086E677 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		177EB2401A8A4C410086E677 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		1791F5A71C2AE19E00940FBC /* INNativeDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeDiscoveryViewController.h; sourceTree = "<group>"; };
+		1791F5A81C2AE19E00940FBC /* INNativeDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INNativeDiscoveryViewController.m; sourceTree = "<group>"; };
+		1791F5AF1C2AE6BB00940FBC /* INNativeDiscoveryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INNativeDiscoveryRequest.h; sourceTree = "<group>"; };
 		17D38E1B1A8A496100B00CC4 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17D38E1F1A8A496100B00CC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17D38E201A8A496100B00CC4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 		1735F1431C0F3327006DD74B /* InstalPublisherSDK */ = {
 			isa = PBXGroup;
 			children = (
+				1791F5AF1C2AE6BB00940FBC /* INNativeDiscoveryRequest.h */,
 				17EEB8751C2ABDEE00CF5C19 /* INDiscoveryWebView.h */,
 				1735F1441C0F3327006DD74B /* INAdView+Internal.h */,
 				1735F1451C0F3327006DD74B /* INAdView.h */,
@@ -158,6 +163,57 @@
 				177EB2341A8A4C1F0086E677 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1791F5AA1C2AE1A600940FBC /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				17EEB8761C2ABEC700CF5C19 /* INDiscoveryWebViewController.h */,
+				17EEB8771C2ABEC700CF5C19 /* INDiscoveryWebViewController.m */,
+				1791F5A71C2AE19E00940FBC /* INNativeDiscoveryViewController.h */,
+				1791F5A81C2AE19E00940FBC /* INNativeDiscoveryViewController.m */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		1791F5AB1C2AE1B000940FBC /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				17D38E641A8A49C300B00CC4 /* INNativeAlertViewController.h */,
+				17D38E651A8A49C300B00CC4 /* INNativeAlertViewController.m */,
+				17D38E661A8A49C300B00CC4 /* INNativeSampleViewController.h */,
+				17D38E671A8A49C300B00CC4 /* INNativeSampleViewController.m */,
+				17E69ACA1A8A5E710075B0D0 /* INTableNativeViewController.h */,
+				17E69ACB1A8A5E710075B0D0 /* INTableNativeViewController.m */,
+			);
+			name = Native;
+			sourceTree = "<group>";
+		};
+		1791F5AC1C2AE1C000940FBC /* Interstitial */ = {
+			isa = PBXGroup;
+			children = (
+				17D38E601A8A49C300B00CC4 /* INInterstitialSampleViewController.h */,
+				17D38E611A8A49C300B00CC4 /* INInterstitialSampleViewController.m */,
+			);
+			name = Interstitial;
+			sourceTree = "<group>";
+		};
+		1791F5AD1C2AE1CB00940FBC /* Banner */ = {
+			isa = PBXGroup;
+			children = (
+				17D38E5E1A8A49C300B00CC4 /* INBannerAdViewController.h */,
+				17D38E5F1A8A49C300B00CC4 /* INBannerAdViewController.m */,
+			);
+			name = Banner;
+			sourceTree = "<group>";
+		};
+		1791F5AE1C2AE1D100940FBC /* Expandable */ = {
+			isa = PBXGroup;
+			children = (
+				17D38E5C1A8A49C300B00CC4 /* INExpandableViewController.h */,
+				17D38E5D1A8A49C300B00CC4 /* INExpandableViewController.m */,
+			);
+			name = Expandable;
 			sourceTree = "<group>";
 		};
 		17D38E121A8A496100B00CC4 = {
@@ -234,20 +290,11 @@
 		17D38E5B1A8A49C300B00CC4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				17D38E5C1A8A49C300B00CC4 /* INExpandableViewController.h */,
-				17D38E5D1A8A49C300B00CC4 /* INExpandableViewController.m */,
-				17D38E5E1A8A49C300B00CC4 /* INBannerAdViewController.h */,
-				17D38E5F1A8A49C300B00CC4 /* INBannerAdViewController.m */,
-				17D38E601A8A49C300B00CC4 /* INInterstitialSampleViewController.h */,
-				17D38E611A8A49C300B00CC4 /* INInterstitialSampleViewController.m */,
-				17D38E641A8A49C300B00CC4 /* INNativeAlertViewController.h */,
-				17D38E651A8A49C300B00CC4 /* INNativeAlertViewController.m */,
-				17D38E661A8A49C300B00CC4 /* INNativeSampleViewController.h */,
-				17D38E671A8A49C300B00CC4 /* INNativeSampleViewController.m */,
-				17E69ACA1A8A5E710075B0D0 /* INTableNativeViewController.h */,
-				17E69ACB1A8A5E710075B0D0 /* INTableNativeViewController.m */,
-				17EEB8761C2ABEC700CF5C19 /* INDiscoveryWebViewController.h */,
-				17EEB8771C2ABEC700CF5C19 /* INDiscoveryWebViewController.m */,
+				1791F5AE1C2AE1D100940FBC /* Expandable */,
+				1791F5AD1C2AE1CB00940FBC /* Banner */,
+				1791F5AC1C2AE1C000940FBC /* Interstitial */,
+				1791F5AB1C2AE1B000940FBC /* Native */,
+				1791F5AA1C2AE1A600940FBC /* Discovery */,
 				17E69ACD1A8A61450075B0D0 /* ISInstalAdCell.h */,
 				17E69ACE1A8A61450075B0D0 /* ISInstalAdCell.m */,
 				17E69AD01A8A61DD0075B0D0 /* ISInstalAdCell.xib */,
@@ -363,6 +410,7 @@
 				17D38E241A8A496100B00CC4 /* AppDelegate.m in Sources */,
 				17D38E6E1A8A49C300B00CC4 /* INNativeAlertViewController.m in Sources */,
 				17D38E211A8A496100B00CC4 /* main.m in Sources */,
+				1791F5A91C2AE19E00940FBC /* INNativeDiscoveryViewController.m in Sources */,
 				17D38E6C1A8A49C300B00CC4 /* INInterstitialSampleViewController.m in Sources */,
 				17E69ACC1A8A5E710075B0D0 /* INTableNativeViewController.m in Sources */,
 				17D38E6A1A8A49C300B00CC4 /* INExpandableViewController.m in Sources */,

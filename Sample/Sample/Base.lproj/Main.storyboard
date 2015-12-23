@@ -207,6 +207,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="htB-uz-jNe" kind="show" id="I9Q-QF-b4g"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -607,7 +610,7 @@
         <!--DIscovery Web View-->
         <scene sceneID="ol6-6N-MBK">
             <objects>
-                <viewController title="DIscovery Web View" id="Uaq-J1-oAo" customClass="INDiscoveryWebViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="INDiscoveryWebViewController" title="DIscovery Web View" id="Uaq-J1-oAo" customClass="INDiscoveryWebViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mUs-OV-9Sf"/>
                         <viewControllerLayoutGuide type="bottom" id="VX2-S5-T62"/>
@@ -643,6 +646,43 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CgP-JE-bvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2158" y="2004"/>
+        </scene>
+        <!--Native Discovery-->
+        <scene sceneID="YYh-gf-bOR">
+            <objects>
+                <viewController storyboardIdentifier="INNativeDiscoveryViewController" title="Native Discovery" useStoryboardIdentifierAsRestorationIdentifier="YES" id="htB-uz-jNe" customClass="INNativeDiscoveryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Bv-h5-9VJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WR8-pV-Eyy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Lg6-9O-8pb">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fva-I1-ZPy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="htB-uz-jNe" id="lAX-5x-6zX"/>
+                                    <outlet property="delegate" destination="htB-uz-jNe" id="dcj-59-q2G"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fva-I1-ZPy" firstAttribute="leading" secondItem="Lg6-9O-8pb" secondAttribute="leading" id="IhC-hV-ab6"/>
+                            <constraint firstAttribute="trailing" secondItem="fva-I1-ZPy" secondAttribute="trailing" id="OZz-w3-sCK"/>
+                            <constraint firstItem="fva-I1-ZPy" firstAttribute="top" secondItem="6Bv-h5-9VJ" secondAttribute="bottom" id="uDT-lx-Tpy"/>
+                            <constraint firstItem="WR8-pV-Eyy" firstAttribute="top" secondItem="fva-I1-ZPy" secondAttribute="bottom" id="vcB-LV-Ykv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fva-I1-ZPy" id="7T3-Qe-LUS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uDj-aN-rWl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2152" y="2779"/>
         </scene>
     </scenes>
     <resources>
