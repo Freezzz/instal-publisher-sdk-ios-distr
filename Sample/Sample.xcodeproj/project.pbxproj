@@ -30,6 +30,7 @@
 		17E69ACC1A8A5E710075B0D0 /* INTableNativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E69ACB1A8A5E710075B0D0 /* INTableNativeViewController.m */; };
 		17E69ACF1A8A61450075B0D0 /* ISInstalAdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E69ACE1A8A61450075B0D0 /* ISInstalAdCell.m */; };
 		17E69AD11A8A61DD0075B0D0 /* ISInstalAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17E69AD01A8A61DD0075B0D0 /* ISInstalAdCell.xib */; };
+		17EEB8781C2ABEC700CF5C19 /* INDiscoveryWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17EEB8771C2ABEC700CF5C19 /* INDiscoveryWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,9 @@
 		17E69ACD1A8A61450075B0D0 /* ISInstalAdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISInstalAdCell.h; sourceTree = "<group>"; };
 		17E69ACE1A8A61450075B0D0 /* ISInstalAdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISInstalAdCell.m; sourceTree = "<group>"; };
 		17E69AD01A8A61DD0075B0D0 /* ISInstalAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ISInstalAdCell.xib; sourceTree = "<group>"; };
+		17EEB8751C2ABDEE00CF5C19 /* INDiscoveryWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDiscoveryWebView.h; sourceTree = "<group>"; };
+		17EEB8761C2ABEC700CF5C19 /* INDiscoveryWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INDiscoveryWebViewController.h; sourceTree = "<group>"; };
+		17EEB8771C2ABEC700CF5C19 /* INDiscoveryWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INDiscoveryWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 		1735F1431C0F3327006DD74B /* InstalPublisherSDK */ = {
 			isa = PBXGroup;
 			children = (
+				17EEB8751C2ABDEE00CF5C19 /* INDiscoveryWebView.h */,
 				1735F1441C0F3327006DD74B /* INAdView+Internal.h */,
 				1735F1451C0F3327006DD74B /* INAdView.h */,
 				1735F1461C0F3327006DD74B /* INAlertAd.h */,
@@ -241,6 +246,8 @@
 				17D38E671A8A49C300B00CC4 /* INNativeSampleViewController.m */,
 				17E69ACA1A8A5E710075B0D0 /* INTableNativeViewController.h */,
 				17E69ACB1A8A5E710075B0D0 /* INTableNativeViewController.m */,
+				17EEB8761C2ABEC700CF5C19 /* INDiscoveryWebViewController.h */,
+				17EEB8771C2ABEC700CF5C19 /* INDiscoveryWebViewController.m */,
 				17E69ACD1A8A61450075B0D0 /* ISInstalAdCell.h */,
 				17E69ACE1A8A61450075B0D0 /* ISInstalAdCell.m */,
 				17E69AD01A8A61DD0075B0D0 /* ISInstalAdCell.xib */,
@@ -352,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17D38E6F1A8A49C300B00CC4 /* INNativeSampleViewController.m in Sources */,
+				17EEB8781C2ABEC700CF5C19 /* INDiscoveryWebViewController.m in Sources */,
 				17D38E241A8A496100B00CC4 /* AppDelegate.m in Sources */,
 				17D38E6E1A8A49C300B00CC4 /* INNativeAlertViewController.m in Sources */,
 				17D38E211A8A496100B00CC4 /* main.m in Sources */,
